@@ -45,13 +45,7 @@ public class Main {
 
         while (iC < teamC.length) {
 
-            if (iA == teamA.length) {
-                teamC[iC] = teamB[iB];
-                iB += 1;
-            } else if (iB == teamB.length) {
-                teamC[iC] = teamA[iA];
-                iA += 1;
-            } else if (teamA[iA] >= teamB[iB]) {
+            if (teamA[iA] >= teamB[iB]) {
                 teamC[iC] = teamA[iA];
                 iA += 1;
             } else {
